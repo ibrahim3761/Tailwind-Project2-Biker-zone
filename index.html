@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>   
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar bg-base-100 px-4 md:px-20">
+      <div class="navbar-start">
+        <h3 class="text-xl font-bold">Bike Dekho</h3>
+      </div>
+    
+      <div class="navbar-end">
+        <ul class="menu menu-horizontal px-1 hidden lg:flex">
+          <li><a href="#" class="hover:bg-[#E76F51] hover:text-white hover:font-bold">Home</a></li>
+          <li><a href="#" class="hover:bg-[#E76F51] hover:text-white hover:font-bold">Shop</a></li>
+          <li><a href="#" class="hover:bg-[#E76F51] hover:text-white hover:font-bold">News</a></li>
+          <li><a href="#" class="hover:bg-[#E76F51] hover:text-white hover:font-bold">Contact</a></li>
+          <li><a href="#" class="hover:bg-[#E76F51] hover:text-white hover:font-bold">Login</a></li>
+        </ul>
+    
+        <!-- Hamburger Menu -->
+        <div class="dropdown dropdown-end lg:hidden relative z-10">
+          <label tabindex="0" class="lg:hidden">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 19.5C6.82843 19.5 7.5 18.8284 7.5 18C7.5 17.1716 6.82843 16.5 6 16.5C5.17157 16.5 4.5 17.1716 4.5 18C4.5 18.8284 5.17157 19.5 6 19.5Z" fill="black"/>
+              <path d="M30.09 16.5H11.91C11.1313 16.5 10.5 17.1313 10.5 17.91V18.09C10.5 18.8687 11.1313 19.5 11.91 19.5H30.09C30.8687 19.5 31.5 18.8687 31.5 18.09V17.91C31.5 17.1313 30.8687 16.5 30.09 16.5Z" fill="black"/>
+              <path d="M30.09 24H5.91C5.13128 24 4.5 24.6313 4.5 25.41V25.59C4.5 26.3687 5.13128 27 5.91 27H30.09C30.8687 27 31.5 26.3687 31.5 25.59V25.41C31.5 24.6313 30.8687 24 30.09 24Z" fill="black"/>
+              <path d="M30.09 9H5.91C5.13128 9 4.5 9.63128 4.5 10.41V10.59C4.5 11.3687 5.13128 12 5.91 12H30.09C30.8687 12 31.5 11.3687 31.5 10.59V10.41C31.5 9.63128 30.8687 9 30.09 9Z" fill="black"/>
+            </svg>
+          </label>
+          <ul tabindex="0" class="dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 z-10">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+
+  <!-- banner -->
+  <div class=" items-center mt-4 px-4 lg:px-20">
+
+    <div class="carousel w-full h-[430px] md:h-[350px] xl:h-[450px] bg-orange-100">
+
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="py-[100px]">
+            <div class="group pt-8 ">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-current text-black group-hover:text-orange-500 transition-colors duration-200">
+                <path d="M26.25 32.5L13.75 20L26.25 7.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            </a>
+          <div class="md:flex gap-28 md:gap-10 xl:gap-[200px]">
+            <div>
+              <h1 class="font-bold text-[22px] md:text-[40px] lg:text-[50px]">Ride-on R15 V4 <br> with Smile</h1>
+              <p class="pt-2 text-[10px] md:text-[14px] lg:text-[18px] lg:pt-4">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.</p>
+              <div class="mt-6 lg:mt-8 w-[80px] h-[40px] pt-[8px] text-[14px] lg:w-[100px] lg:h-[50px] lg:pt-[10px] rounded-xl text-center text-white font-bold bg-[#E76F51]"> Purchase</div>
+            </div>
+            <img class="mt-4 md:w-[250px] xl:w-[400px]" src="/image/33722324_bike019_elscar_rtr_5429 1.png" alt="">
+          </div>
+          <a href="#slide2" class="py-[100px]">
+            <div class="group pt-8">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class=" rotate-180 stroke-current text-black group-hover:text-orange-500 transition-colors duration-200">
+                <path d="M26.25 32.5L13.75 20L26.25 7.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            </a>
+        </div>
+      </div>
+      
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="py-[100px]">
+            <div class="group pt-8">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-current text-black group-hover:text-orange-500 transition-colors duration-200">
+                <path d="M26.25 32.5L13.75 20L26.25 7.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            </a>
+          <div class="md:flex gap-28 md:gap-10 xl:gap-[200px]">
+            <div>
+              <h1 class="font-bold text-[22px] md:text-[40px] lg:text-[50px]">Ride-on R15 V4 <br> with Smile</h1>
+              <p class="pt-2 text-[10px] md:text-[14px] lg:text-[18px] lg:pt-4">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.</p>
+              <div class="mt-6 lg:mt-8 w-[80px] h-[40px] pt-[8px] text-[14px] lg:w-[100px] lg:h-[50px] lg:pt-[10px] rounded-xl text-center text-white font-bold bg-[#E76F51]"> Purchase</div>
+            </div>
+            <img class="mt-4 md:w-[250px] xl:w-[400px]" src="/image/33721726_bike016_elscar_rtr_5147 1.png" alt="">
+          </div>
+          <a href="#slide3" class="py-[100px]">
+            <div class="group pt-8">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class=" rotate-180 stroke-current text-black group-hover:text-orange-500 transition-colors duration-200">
+                <path d="M26.25 32.5L13.75 20L26.25 7.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            </a>
+        </div>
+      </div>
+      
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="py-[100px]">
+            <div class="group pt-8">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-current text-black group-hover:text-orange-500 transition-colors duration-200">
+                <path d="M26.25 32.5L13.75 20L26.25 7.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            </a>
+          <div class="md:flex gap-28 md:gap-10 xl:gap-[200px]">
+            <div>
+              <h1 class="font-bold text-[22px] md:text-[40px] lg:text-[50px]">Ride-on R15 V4 <br> with Smile</h1>
+              <p class="pt-2 text-[10px] md:text-[14px] lg:text-[18px] lg:pt-4">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.</p>
+              <div class="mt-6 lg:mt-8 w-[80px] h-[40px] pt-[8px] text-[14px] lg:w-[100px] lg:h-[50px] lg:pt-[10px] rounded-xl text-center text-white font-bold bg-[#E76F51]"> Purchase</div>
+            </div>
+            <img class="mt-4 md:w-[250px] xl:w-[400px]" src="/image/33983747_bike007_elscar_rtr_4779 1.png" alt="">
+          </div>
+          <a href="#slide1" class="py-[100px]">
+            <div class="group pt-8">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class=" rotate-180 stroke-current text-black group-hover:text-orange-500 transition-colors duration-200">
+                <path d="M26.25 32.5L13.75 20L26.25 7.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            </a>
+        </div>
+      </div>
+
+    </div>
+  
+  </div>
+
+  <!-- Featured bikes -->
+  <div class="mt-20 px-4 md:px-20 text-center items-center">
+
+    <h1 class="text-[24px] lg:text-[32px] font-bold">
+      Fetured Bikes In This Year
+    </h1>
+    <p class="text-[#E76F51] text-[12px] font-semibold mb-8">Best bike collection</p>
+     
+    <div class=" mt-8 items-center flex flex-col lg:flex-row gap-24 lg:gap-[80px] xl:gap-[250px]">
+      <div  id="1">
+        <img src="image/Rectangle 4637 2.png" alt="">
+      </div>
+      <div  id="2">
+        <img src="image/Rectangle 4637 3.png" alt="">
+      </div>
+      <div  id="3">
+        <img src="image/Rectangle 4637 2.png" alt="">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Latest News -->
+  <div class="mt-20 px-4 md:px-20 md:text-center lg:text-center items-center">
+    <h1 class="text-[24px] md:text-[40px] lg:text-[32px] font-bold">
+      Latest News
+    </h1>
+    <div class=" items-center flex flex-col lg:flex-row gap-14 lg:gap-[20px]">
+      <div class=" md:w-[550px] card bg-base-100 w-72 shadow-md">
+        <figure>
+          <img class=" md:w-[520px] w-[270px] lg:w-[420px] mt-4"
+            src="image/Project Cover.png"
+            alt=""/>
+        </figure>
+        <div class="text-left">
+          <h2 class="font-bold lg:text-[20px] py-2 px-2 lg:py-4 md:px-4 lg:px-4">Ducati XDIAVEL S-73</h2>
+          <p class=" py-2 px-2 lg:py-4 lg:px-4 text-[14px] md:px-4 lg:text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+          <div class="card-actions justify-start py-2 px-2 md:px-4 lg:py-4 lg:px-4">
+            <button class="btn border hover:bg-[#E76F51] hover:text-white border-[#E76F51] text-[#E76F51]">Read more</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" md:w-[550px] card bg-base-100 w-72 shadow-md">
+        <figure>
+          <img class=" md:w-[520px] w-[270px] lg:w-[420px] mt-4"
+            src="/image/Project Cover (1).png"
+            alt=""/>
+        </figure>
+        <div class="text-left">
+          <h2 class="font-bold lg:text-[20px] py-2 px-2 lg:py-4 md:px-4 lg:px-4">Motorcycles & Scooters</h2>
+          <p class=" py-2 px-2 lg:py-4 lg:px-4 text-[14px] md:px-4 lg:text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+          <div class="card-actions justify-start py-2 px-2 md:px-4 lg:py-4 lg:px-4">
+            <button class="btn border hover:bg-[#E76F51] hover:text-white border-[#E76F51] text-[#E76F51]">Read more</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" md:w-[550px] card bg-base-100 w-72 shadow-md">
+        <figure>
+          <img class=" md:w-[520px] w-[270px] lg:w-[420px] mt-4"
+            src="/image/Project Cover (2).png"
+            alt=""/>
+        </figure>
+        <div class="text-left">
+          <h2 class="font-bold lg:text-[20px] py-2 px-2 lg:py-4 md:px-4 lg:px-4">2021 Honda CBR500R</h2>
+          <p class=" py-2 px-2 lg:py-4 lg:px-4 text-[14px] md:px-4 lg:text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+          <div class="card-actions justify-start py-2 px-2 md:px-4 lg:py-4 lg:px-4">
+            <button class="btn border hover:bg-[#E76F51] hover:text-white border-[#E76F51] text-[#E76F51]">Read more</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Happy client -->
+  <div class="mt-20 px-4 md:px-20 text-center items-center">
+    <h1 class="text-[30px] lg:text-[32px] font-bold mb-8">
+      <span class="block lg:inline">Happy</span> 
+      <span class="text-[#E76F51]">Clients</span> 
+      <span class="text-[#E76F51]">Says</span>
+    </h1>
+
+    <div class="items-center flex flex-col lg:flex-row lg:px-4 gap-24 lg:gap-[80px]">
+
+      <div class="card bg-base-100 w-72 md:w-[400px] border">
+        <figure class="rounded-full px-10 pt-10">
+          <img
+            src="/image/cover.png"
+            alt="Shoes"
+            class="rounded-full" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+          <svg width="131" height="23" viewBox="0 0 131 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_738)">
+            <path d="M20.5967 8.41927C20.539 8.24946 20.4329 8.10025 20.2914 7.99006C20.1499 7.87987 19.9793 7.81353 19.8005 7.79922L14.5714 7.38371L12.3086 2.3747C12.2365 2.21337 12.1193 2.07634 11.9711 1.98016C11.8228 1.88397 11.65 1.83274 11.4733 1.83264C11.2966 1.83254 11.1236 1.88359 10.9753 1.97961C10.827 2.07563 10.7096 2.21253 10.6374 2.37378L8.37455 7.38371L3.14539 7.79922C2.9697 7.81314 2.80174 7.87738 2.6616 7.98425C2.52147 8.09113 2.41509 8.23612 2.35519 8.40187C2.2953 8.56762 2.28442 8.74712 2.32387 8.91889C2.36332 9.09066 2.45142 9.24743 2.57763 9.37044L6.44193 13.1375L5.07526 19.0555C5.03376 19.2347 5.04706 19.4221 5.11343 19.5936C5.1798 19.7651 5.29618 19.9127 5.44747 20.0172C5.59876 20.1217 5.77797 20.1783 5.96184 20.1797C6.14571 20.1811 6.32576 20.1272 6.47862 20.025L11.473 16.6955L16.4673 20.025C16.6235 20.1288 16.8078 20.1822 16.9953 20.1781C17.1828 20.1739 17.3645 20.1125 17.5161 20.002C17.6676 19.8916 17.7817 19.7373 17.8429 19.5601C17.9042 19.3828 17.9097 19.1911 17.8587 19.0106L16.1811 13.1403L20.3417 9.39612C20.6141 9.15031 20.7141 8.7669 20.5967 8.41927Z" fill="#E77C40"/>
+            <path d="M47.6116 8.41927C47.554 8.24946 47.4479 8.10025 47.3064 7.99006C47.1649 7.87987 46.9942 7.81353 46.8155 7.79922L41.5863 7.38371L39.3235 2.3747C39.2515 2.21337 39.1342 2.07634 38.986 1.98016C38.8378 1.88397 38.6649 1.83274 38.4882 1.83264C38.3115 1.83254 38.1386 1.88359 37.9902 1.97961C37.8419 2.07563 37.7246 2.21253 37.6523 2.37378L35.3895 7.38371L30.1603 7.79922C29.9847 7.81314 29.8167 7.87738 29.6766 7.98425C29.5364 8.09113 29.43 8.23612 29.3701 8.40187C29.3102 8.56762 29.2994 8.74712 29.3388 8.91889C29.3783 9.09066 29.4664 9.24743 29.5926 9.37044L33.4569 13.1375L32.0902 19.0555C32.0487 19.2347 32.062 19.4221 32.1284 19.5936C32.1948 19.7651 32.3111 19.9127 32.4624 20.0172C32.6137 20.1217 32.7929 20.1783 32.9768 20.1797C33.1607 20.1811 33.3407 20.1272 33.4936 20.025L38.4879 16.6955L43.4823 20.025C43.6385 20.1288 43.8228 20.1822 44.0102 20.1781C44.1977 20.1739 44.3795 20.1125 44.531 20.002C44.6826 19.8916 44.7966 19.7373 44.8579 19.5601C44.9192 19.3828 44.9247 19.1911 44.8737 19.0106L43.1961 13.1403L47.3567 9.39612C47.6291 9.15031 47.7291 8.7669 47.6116 8.41927Z" fill="#E77C40"/>
+            <path d="M74.6226 8.41927C74.565 8.24946 74.4589 8.10025 74.3174 7.99006C74.1759 7.87987 74.0052 7.81353 73.8265 7.79922L68.5973 7.38371L66.3345 2.3747C66.2624 2.21337 66.1452 2.07634 65.997 1.98016C65.8488 1.88397 65.6759 1.83274 65.4992 1.83264C65.3225 1.83254 65.1496 1.88359 65.0012 1.97961C64.8529 2.07563 64.7355 2.21253 64.6633 2.37378L62.4005 7.38371L57.1713 7.79922C56.9956 7.81314 56.8277 7.87738 56.6875 7.98425C56.5474 8.09113 56.441 8.23612 56.3811 8.40187C56.3212 8.56762 56.3104 8.74712 56.3498 8.91889C56.3893 9.09066 56.4774 9.24743 56.6036 9.37044L60.4679 13.1375L59.1012 19.0555C59.0597 19.2347 59.073 19.4221 59.1394 19.5936C59.2057 19.7651 59.3221 19.9127 59.4734 20.0172C59.6247 20.1217 59.8039 20.1783 59.9878 20.1797C60.1717 20.1811 60.3517 20.1272 60.5046 20.025L65.4989 16.6955L70.4932 20.025C70.6495 20.1288 70.8337 20.1822 71.0212 20.1781C71.2087 20.1739 71.3905 20.1125 71.542 20.002C71.6935 19.8916 71.8076 19.7373 71.8689 19.5601C71.9301 19.3828 71.9357 19.1911 71.8847 19.0106L70.2071 13.1403L74.3676 9.39612C74.6401 9.15031 74.74 8.7669 74.6226 8.41927Z" fill="#E77C40"/>
+            <path d="M101.637 8.41927C101.579 8.24946 101.473 8.10025 101.331 7.99006C101.19 7.87987 101.019 7.81353 100.841 7.79922L95.6114 7.38371L93.3485 2.3747C93.2765 2.21337 93.1593 2.07634 93.011 1.98016C92.8628 1.88397 92.6899 1.83274 92.5132 1.83264C92.3365 1.83254 92.1636 1.88359 92.0153 1.97961C91.8669 2.07563 91.7496 2.21253 91.6773 2.37378L89.4145 7.38371L84.1854 7.79922C84.0097 7.81314 83.8417 7.87738 83.7016 7.98425C83.5614 8.09113 83.4551 8.23612 83.3952 8.40187C83.3353 8.56762 83.3244 8.74712 83.3638 8.91889C83.4033 9.09066 83.4914 9.24743 83.6176 9.37044L87.4819 13.1375L86.1152 19.0555C86.0737 19.2347 86.087 19.4221 86.1534 19.5936C86.2198 19.7651 86.3362 19.9127 86.4874 20.0172C86.6387 20.1217 86.8179 20.1783 87.0018 20.1797C87.1857 20.1811 87.3657 20.1272 87.5186 20.025L92.5129 16.6955L97.5073 20.025C97.6635 20.1288 97.8478 20.1822 98.0353 20.1781C98.2228 20.1739 98.4045 20.1125 98.556 20.002C98.7076 19.8916 98.8217 19.7373 98.8829 19.5601C98.9442 19.3828 98.9497 19.1911 98.8987 19.0106L97.2211 13.1403L101.382 9.39612C101.654 9.15031 101.754 8.7669 101.637 8.41927Z" fill="#E77C40"/>
+            <path d="M114.498 13.1376L113.131 19.0556C113.089 19.2348 113.101 19.4226 113.167 19.5945C113.234 19.7663 113.35 19.9143 113.501 20.019C113.653 20.1237 113.832 20.1803 114.016 20.1814C114.201 20.1825 114.381 20.128 114.533 20.0251L119.528 16.6956L124.522 20.0251C124.678 20.1289 124.863 20.1823 125.05 20.1781C125.238 20.174 125.419 20.1126 125.571 20.0021C125.722 19.8916 125.837 19.7374 125.898 19.5602C125.959 19.3829 125.965 19.1911 125.914 19.0107L124.236 13.1404L128.397 9.39622C128.53 9.27623 128.625 9.11982 128.67 8.94632C128.716 8.77283 128.709 8.58986 128.651 8.42004C128.594 8.25023 128.488 8.10101 128.346 7.99085C128.205 7.88069 128.034 7.81442 127.855 7.80023L122.626 7.3838L120.363 2.37479C120.291 2.2135 120.174 2.07654 120.026 1.98043C119.877 1.88433 119.705 1.83319 119.528 1.83319C119.351 1.83319 119.178 1.88433 119.03 1.98043C118.882 2.07654 118.764 2.2135 118.692 2.37479L116.429 7.3838L111.2 7.79931C111.025 7.81323 110.857 7.87747 110.716 7.98434C110.576 8.09122 110.47 8.23621 110.41 8.40196C110.35 8.56771 110.339 8.74721 110.379 8.91898C110.418 9.09075 110.506 9.24752 110.632 9.37053L114.498 13.1376ZM117.115 9.16966C117.278 9.15676 117.436 9.10005 117.57 9.00549C117.704 8.91092 117.81 8.78197 117.878 8.63216L119.528 4.98065L121.178 8.63216C121.245 8.78197 121.352 8.91092 121.486 9.00549C121.62 9.10005 121.777 9.15676 121.941 9.16966L125.584 9.45859L122.584 12.1589C122.324 12.3937 122.22 12.7551 122.315 13.0927L123.465 17.1147L120.038 14.8299C119.887 14.729 119.71 14.6751 119.529 14.6751C119.348 14.6751 119.171 14.729 119.021 14.8299L115.44 17.2175L116.403 13.0477C116.438 12.8944 116.433 12.7345 116.389 12.5835C116.345 12.4325 116.262 12.2954 116.15 12.1855L113.363 9.46868L117.115 9.16966Z" fill="#E77C40"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1_738">
+            <rect width="130.068" height="22.0136" fill="white" transform="translate(0.465942)"/>
+            </clipPath>
+            </defs>
+          </svg>
+          <p class="text-[#23A6F0] font-semibold">Regina Miles</p>   
+          <p class="font-bold">Banker</p>         
+        </div>
+      </div>
+
+      <div class="card bg-base-100 w-72 md:w-[400px] border">
+        <figure class="rounded-full px-10 pt-10">
+          <img
+            src="/image/cover.png"
+            alt="Shoes"
+            class="rounded-full" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+          <svg width="131" height="23" viewBox="0 0 131 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_738)">
+            <path d="M20.5967 8.41927C20.539 8.24946 20.4329 8.10025 20.2914 7.99006C20.1499 7.87987 19.9793 7.81353 19.8005 7.79922L14.5714 7.38371L12.3086 2.3747C12.2365 2.21337 12.1193 2.07634 11.9711 1.98016C11.8228 1.88397 11.65 1.83274 11.4733 1.83264C11.2966 1.83254 11.1236 1.88359 10.9753 1.97961C10.827 2.07563 10.7096 2.21253 10.6374 2.37378L8.37455 7.38371L3.14539 7.79922C2.9697 7.81314 2.80174 7.87738 2.6616 7.98425C2.52147 8.09113 2.41509 8.23612 2.35519 8.40187C2.2953 8.56762 2.28442 8.74712 2.32387 8.91889C2.36332 9.09066 2.45142 9.24743 2.57763 9.37044L6.44193 13.1375L5.07526 19.0555C5.03376 19.2347 5.04706 19.4221 5.11343 19.5936C5.1798 19.7651 5.29618 19.9127 5.44747 20.0172C5.59876 20.1217 5.77797 20.1783 5.96184 20.1797C6.14571 20.1811 6.32576 20.1272 6.47862 20.025L11.473 16.6955L16.4673 20.025C16.6235 20.1288 16.8078 20.1822 16.9953 20.1781C17.1828 20.1739 17.3645 20.1125 17.5161 20.002C17.6676 19.8916 17.7817 19.7373 17.8429 19.5601C17.9042 19.3828 17.9097 19.1911 17.8587 19.0106L16.1811 13.1403L20.3417 9.39612C20.6141 9.15031 20.7141 8.7669 20.5967 8.41927Z" fill="#E77C40"/>
+            <path d="M47.6116 8.41927C47.554 8.24946 47.4479 8.10025 47.3064 7.99006C47.1649 7.87987 46.9942 7.81353 46.8155 7.79922L41.5863 7.38371L39.3235 2.3747C39.2515 2.21337 39.1342 2.07634 38.986 1.98016C38.8378 1.88397 38.6649 1.83274 38.4882 1.83264C38.3115 1.83254 38.1386 1.88359 37.9902 1.97961C37.8419 2.07563 37.7246 2.21253 37.6523 2.37378L35.3895 7.38371L30.1603 7.79922C29.9847 7.81314 29.8167 7.87738 29.6766 7.98425C29.5364 8.09113 29.43 8.23612 29.3701 8.40187C29.3102 8.56762 29.2994 8.74712 29.3388 8.91889C29.3783 9.09066 29.4664 9.24743 29.5926 9.37044L33.4569 13.1375L32.0902 19.0555C32.0487 19.2347 32.062 19.4221 32.1284 19.5936C32.1948 19.7651 32.3111 19.9127 32.4624 20.0172C32.6137 20.1217 32.7929 20.1783 32.9768 20.1797C33.1607 20.1811 33.3407 20.1272 33.4936 20.025L38.4879 16.6955L43.4823 20.025C43.6385 20.1288 43.8228 20.1822 44.0102 20.1781C44.1977 20.1739 44.3795 20.1125 44.531 20.002C44.6826 19.8916 44.7966 19.7373 44.8579 19.5601C44.9192 19.3828 44.9247 19.1911 44.8737 19.0106L43.1961 13.1403L47.3567 9.39612C47.6291 9.15031 47.7291 8.7669 47.6116 8.41927Z" fill="#E77C40"/>
+            <path d="M74.6226 8.41927C74.565 8.24946 74.4589 8.10025 74.3174 7.99006C74.1759 7.87987 74.0052 7.81353 73.8265 7.79922L68.5973 7.38371L66.3345 2.3747C66.2624 2.21337 66.1452 2.07634 65.997 1.98016C65.8488 1.88397 65.6759 1.83274 65.4992 1.83264C65.3225 1.83254 65.1496 1.88359 65.0012 1.97961C64.8529 2.07563 64.7355 2.21253 64.6633 2.37378L62.4005 7.38371L57.1713 7.79922C56.9956 7.81314 56.8277 7.87738 56.6875 7.98425C56.5474 8.09113 56.441 8.23612 56.3811 8.40187C56.3212 8.56762 56.3104 8.74712 56.3498 8.91889C56.3893 9.09066 56.4774 9.24743 56.6036 9.37044L60.4679 13.1375L59.1012 19.0555C59.0597 19.2347 59.073 19.4221 59.1394 19.5936C59.2057 19.7651 59.3221 19.9127 59.4734 20.0172C59.6247 20.1217 59.8039 20.1783 59.9878 20.1797C60.1717 20.1811 60.3517 20.1272 60.5046 20.025L65.4989 16.6955L70.4932 20.025C70.6495 20.1288 70.8337 20.1822 71.0212 20.1781C71.2087 20.1739 71.3905 20.1125 71.542 20.002C71.6935 19.8916 71.8076 19.7373 71.8689 19.5601C71.9301 19.3828 71.9357 19.1911 71.8847 19.0106L70.2071 13.1403L74.3676 9.39612C74.6401 9.15031 74.74 8.7669 74.6226 8.41927Z" fill="#E77C40"/>
+            <path d="M101.637 8.41927C101.579 8.24946 101.473 8.10025 101.331 7.99006C101.19 7.87987 101.019 7.81353 100.841 7.79922L95.6114 7.38371L93.3485 2.3747C93.2765 2.21337 93.1593 2.07634 93.011 1.98016C92.8628 1.88397 92.6899 1.83274 92.5132 1.83264C92.3365 1.83254 92.1636 1.88359 92.0153 1.97961C91.8669 2.07563 91.7496 2.21253 91.6773 2.37378L89.4145 7.38371L84.1854 7.79922C84.0097 7.81314 83.8417 7.87738 83.7016 7.98425C83.5614 8.09113 83.4551 8.23612 83.3952 8.40187C83.3353 8.56762 83.3244 8.74712 83.3638 8.91889C83.4033 9.09066 83.4914 9.24743 83.6176 9.37044L87.4819 13.1375L86.1152 19.0555C86.0737 19.2347 86.087 19.4221 86.1534 19.5936C86.2198 19.7651 86.3362 19.9127 86.4874 20.0172C86.6387 20.1217 86.8179 20.1783 87.0018 20.1797C87.1857 20.1811 87.3657 20.1272 87.5186 20.025L92.5129 16.6955L97.5073 20.025C97.6635 20.1288 97.8478 20.1822 98.0353 20.1781C98.2228 20.1739 98.4045 20.1125 98.556 20.002C98.7076 19.8916 98.8217 19.7373 98.8829 19.5601C98.9442 19.3828 98.9497 19.1911 98.8987 19.0106L97.2211 13.1403L101.382 9.39612C101.654 9.15031 101.754 8.7669 101.637 8.41927Z" fill="#E77C40"/>
+            <path d="M114.498 13.1376L113.131 19.0556C113.089 19.2348 113.101 19.4226 113.167 19.5945C113.234 19.7663 113.35 19.9143 113.501 20.019C113.653 20.1237 113.832 20.1803 114.016 20.1814C114.201 20.1825 114.381 20.128 114.533 20.0251L119.528 16.6956L124.522 20.0251C124.678 20.1289 124.863 20.1823 125.05 20.1781C125.238 20.174 125.419 20.1126 125.571 20.0021C125.722 19.8916 125.837 19.7374 125.898 19.5602C125.959 19.3829 125.965 19.1911 125.914 19.0107L124.236 13.1404L128.397 9.39622C128.53 9.27623 128.625 9.11982 128.67 8.94632C128.716 8.77283 128.709 8.58986 128.651 8.42004C128.594 8.25023 128.488 8.10101 128.346 7.99085C128.205 7.88069 128.034 7.81442 127.855 7.80023L122.626 7.3838L120.363 2.37479C120.291 2.2135 120.174 2.07654 120.026 1.98043C119.877 1.88433 119.705 1.83319 119.528 1.83319C119.351 1.83319 119.178 1.88433 119.03 1.98043C118.882 2.07654 118.764 2.2135 118.692 2.37479L116.429 7.3838L111.2 7.79931C111.025 7.81323 110.857 7.87747 110.716 7.98434C110.576 8.09122 110.47 8.23621 110.41 8.40196C110.35 8.56771 110.339 8.74721 110.379 8.91898C110.418 9.09075 110.506 9.24752 110.632 9.37053L114.498 13.1376ZM117.115 9.16966C117.278 9.15676 117.436 9.10005 117.57 9.00549C117.704 8.91092 117.81 8.78197 117.878 8.63216L119.528 4.98065L121.178 8.63216C121.245 8.78197 121.352 8.91092 121.486 9.00549C121.62 9.10005 121.777 9.15676 121.941 9.16966L125.584 9.45859L122.584 12.1589C122.324 12.3937 122.22 12.7551 122.315 13.0927L123.465 17.1147L120.038 14.8299C119.887 14.729 119.71 14.6751 119.529 14.6751C119.348 14.6751 119.171 14.729 119.021 14.8299L115.44 17.2175L116.403 13.0477C116.438 12.8944 116.433 12.7345 116.389 12.5835C116.345 12.4325 116.262 12.2954 116.15 12.1855L113.363 9.46868L117.115 9.16966Z" fill="#E77C40"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1_738">
+            <rect width="130.068" height="22.0136" fill="white" transform="translate(0.465942)"/>
+            </clipPath>
+            </defs>
+          </svg>
+          <p class="text-[#23A6F0] font-semibold">Regina Miles</p>   
+          <p class="font-bold">Banker</p>         
+        </div>
+      </div>
+
+      <div class="card bg-base-100 w-72 md:w-[400px] border">
+        <figure class="rounded-full px-10 pt-10">
+          <img
+            src="/image/cover.png"
+            alt="Shoes"
+            class="rounded-full" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+          <svg width="131" height="23" viewBox="0 0 131 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_738)">
+            <path d="M20.5967 8.41927C20.539 8.24946 20.4329 8.10025 20.2914 7.99006C20.1499 7.87987 19.9793 7.81353 19.8005 7.79922L14.5714 7.38371L12.3086 2.3747C12.2365 2.21337 12.1193 2.07634 11.9711 1.98016C11.8228 1.88397 11.65 1.83274 11.4733 1.83264C11.2966 1.83254 11.1236 1.88359 10.9753 1.97961C10.827 2.07563 10.7096 2.21253 10.6374 2.37378L8.37455 7.38371L3.14539 7.79922C2.9697 7.81314 2.80174 7.87738 2.6616 7.98425C2.52147 8.09113 2.41509 8.23612 2.35519 8.40187C2.2953 8.56762 2.28442 8.74712 2.32387 8.91889C2.36332 9.09066 2.45142 9.24743 2.57763 9.37044L6.44193 13.1375L5.07526 19.0555C5.03376 19.2347 5.04706 19.4221 5.11343 19.5936C5.1798 19.7651 5.29618 19.9127 5.44747 20.0172C5.59876 20.1217 5.77797 20.1783 5.96184 20.1797C6.14571 20.1811 6.32576 20.1272 6.47862 20.025L11.473 16.6955L16.4673 20.025C16.6235 20.1288 16.8078 20.1822 16.9953 20.1781C17.1828 20.1739 17.3645 20.1125 17.5161 20.002C17.6676 19.8916 17.7817 19.7373 17.8429 19.5601C17.9042 19.3828 17.9097 19.1911 17.8587 19.0106L16.1811 13.1403L20.3417 9.39612C20.6141 9.15031 20.7141 8.7669 20.5967 8.41927Z" fill="#E77C40"/>
+            <path d="M47.6116 8.41927C47.554 8.24946 47.4479 8.10025 47.3064 7.99006C47.1649 7.87987 46.9942 7.81353 46.8155 7.79922L41.5863 7.38371L39.3235 2.3747C39.2515 2.21337 39.1342 2.07634 38.986 1.98016C38.8378 1.88397 38.6649 1.83274 38.4882 1.83264C38.3115 1.83254 38.1386 1.88359 37.9902 1.97961C37.8419 2.07563 37.7246 2.21253 37.6523 2.37378L35.3895 7.38371L30.1603 7.79922C29.9847 7.81314 29.8167 7.87738 29.6766 7.98425C29.5364 8.09113 29.43 8.23612 29.3701 8.40187C29.3102 8.56762 29.2994 8.74712 29.3388 8.91889C29.3783 9.09066 29.4664 9.24743 29.5926 9.37044L33.4569 13.1375L32.0902 19.0555C32.0487 19.2347 32.062 19.4221 32.1284 19.5936C32.1948 19.7651 32.3111 19.9127 32.4624 20.0172C32.6137 20.1217 32.7929 20.1783 32.9768 20.1797C33.1607 20.1811 33.3407 20.1272 33.4936 20.025L38.4879 16.6955L43.4823 20.025C43.6385 20.1288 43.8228 20.1822 44.0102 20.1781C44.1977 20.1739 44.3795 20.1125 44.531 20.002C44.6826 19.8916 44.7966 19.7373 44.8579 19.5601C44.9192 19.3828 44.9247 19.1911 44.8737 19.0106L43.1961 13.1403L47.3567 9.39612C47.6291 9.15031 47.7291 8.7669 47.6116 8.41927Z" fill="#E77C40"/>
+            <path d="M74.6226 8.41927C74.565 8.24946 74.4589 8.10025 74.3174 7.99006C74.1759 7.87987 74.0052 7.81353 73.8265 7.79922L68.5973 7.38371L66.3345 2.3747C66.2624 2.21337 66.1452 2.07634 65.997 1.98016C65.8488 1.88397 65.6759 1.83274 65.4992 1.83264C65.3225 1.83254 65.1496 1.88359 65.0012 1.97961C64.8529 2.07563 64.7355 2.21253 64.6633 2.37378L62.4005 7.38371L57.1713 7.79922C56.9956 7.81314 56.8277 7.87738 56.6875 7.98425C56.5474 8.09113 56.441 8.23612 56.3811 8.40187C56.3212 8.56762 56.3104 8.74712 56.3498 8.91889C56.3893 9.09066 56.4774 9.24743 56.6036 9.37044L60.4679 13.1375L59.1012 19.0555C59.0597 19.2347 59.073 19.4221 59.1394 19.5936C59.2057 19.7651 59.3221 19.9127 59.4734 20.0172C59.6247 20.1217 59.8039 20.1783 59.9878 20.1797C60.1717 20.1811 60.3517 20.1272 60.5046 20.025L65.4989 16.6955L70.4932 20.025C70.6495 20.1288 70.8337 20.1822 71.0212 20.1781C71.2087 20.1739 71.3905 20.1125 71.542 20.002C71.6935 19.8916 71.8076 19.7373 71.8689 19.5601C71.9301 19.3828 71.9357 19.1911 71.8847 19.0106L70.2071 13.1403L74.3676 9.39612C74.6401 9.15031 74.74 8.7669 74.6226 8.41927Z" fill="#E77C40"/>
+            <path d="M101.637 8.41927C101.579 8.24946 101.473 8.10025 101.331 7.99006C101.19 7.87987 101.019 7.81353 100.841 7.79922L95.6114 7.38371L93.3485 2.3747C93.2765 2.21337 93.1593 2.07634 93.011 1.98016C92.8628 1.88397 92.6899 1.83274 92.5132 1.83264C92.3365 1.83254 92.1636 1.88359 92.0153 1.97961C91.8669 2.07563 91.7496 2.21253 91.6773 2.37378L89.4145 7.38371L84.1854 7.79922C84.0097 7.81314 83.8417 7.87738 83.7016 7.98425C83.5614 8.09113 83.4551 8.23612 83.3952 8.40187C83.3353 8.56762 83.3244 8.74712 83.3638 8.91889C83.4033 9.09066 83.4914 9.24743 83.6176 9.37044L87.4819 13.1375L86.1152 19.0555C86.0737 19.2347 86.087 19.4221 86.1534 19.5936C86.2198 19.7651 86.3362 19.9127 86.4874 20.0172C86.6387 20.1217 86.8179 20.1783 87.0018 20.1797C87.1857 20.1811 87.3657 20.1272 87.5186 20.025L92.5129 16.6955L97.5073 20.025C97.6635 20.1288 97.8478 20.1822 98.0353 20.1781C98.2228 20.1739 98.4045 20.1125 98.556 20.002C98.7076 19.8916 98.8217 19.7373 98.8829 19.5601C98.9442 19.3828 98.9497 19.1911 98.8987 19.0106L97.2211 13.1403L101.382 9.39612C101.654 9.15031 101.754 8.7669 101.637 8.41927Z" fill="#E77C40"/>
+            <path d="M114.498 13.1376L113.131 19.0556C113.089 19.2348 113.101 19.4226 113.167 19.5945C113.234 19.7663 113.35 19.9143 113.501 20.019C113.653 20.1237 113.832 20.1803 114.016 20.1814C114.201 20.1825 114.381 20.128 114.533 20.0251L119.528 16.6956L124.522 20.0251C124.678 20.1289 124.863 20.1823 125.05 20.1781C125.238 20.174 125.419 20.1126 125.571 20.0021C125.722 19.8916 125.837 19.7374 125.898 19.5602C125.959 19.3829 125.965 19.1911 125.914 19.0107L124.236 13.1404L128.397 9.39622C128.53 9.27623 128.625 9.11982 128.67 8.94632C128.716 8.77283 128.709 8.58986 128.651 8.42004C128.594 8.25023 128.488 8.10101 128.346 7.99085C128.205 7.88069 128.034 7.81442 127.855 7.80023L122.626 7.3838L120.363 2.37479C120.291 2.2135 120.174 2.07654 120.026 1.98043C119.877 1.88433 119.705 1.83319 119.528 1.83319C119.351 1.83319 119.178 1.88433 119.03 1.98043C118.882 2.07654 118.764 2.2135 118.692 2.37479L116.429 7.3838L111.2 7.79931C111.025 7.81323 110.857 7.87747 110.716 7.98434C110.576 8.09122 110.47 8.23621 110.41 8.40196C110.35 8.56771 110.339 8.74721 110.379 8.91898C110.418 9.09075 110.506 9.24752 110.632 9.37053L114.498 13.1376ZM117.115 9.16966C117.278 9.15676 117.436 9.10005 117.57 9.00549C117.704 8.91092 117.81 8.78197 117.878 8.63216L119.528 4.98065L121.178 8.63216C121.245 8.78197 121.352 8.91092 121.486 9.00549C121.62 9.10005 121.777 9.15676 121.941 9.16966L125.584 9.45859L122.584 12.1589C122.324 12.3937 122.22 12.7551 122.315 13.0927L123.465 17.1147L120.038 14.8299C119.887 14.729 119.71 14.6751 119.529 14.6751C119.348 14.6751 119.171 14.729 119.021 14.8299L115.44 17.2175L116.403 13.0477C116.438 12.8944 116.433 12.7345 116.389 12.5835C116.345 12.4325 116.262 12.2954 116.15 12.1855L113.363 9.46868L117.115 9.16966Z" fill="#E77C40"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1_738">
+            <rect width="130.068" height="22.0136" fill="white" transform="translate(0.465942)"/>
+            </clipPath>
+            </defs>
+          </svg>
+          <p class="text-[#23A6F0] font-semibold">Regina Miles</p>   
+          <p class="font-bold">Banker</p>         
+        </div>
+      </div>
+
+    </div>
+
+  </div> 
+
+  <!-- FAQ -->
+
+  <section class="faq mb-[80px] mt-20 px-4 lg:pl-20 lg:pr-8">
+
+    <h2 class="text-[#0A0826] text-[40px] font-semibold text-center mb-[5rem]">Frequently Asked <span
+            class="text-[#E76F51]">Questions</span></h2>
+
+    <div class="faq-body flex flex-col items-center lg:flex-row gap-x-[4rem] ">
+        <div class="faq-img mb-[64px] w-full">
+            <img src="/image/Frame.png" alt="" >
+        </div>
+
+        <div class="faq-accordions px-[24px]">
+            <div class="collapse collapse-arrow bg-white">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium text-[#383838]">What are the most important things I should know about riding a bike?</div>
+                <div class="collapse-content">
+                    <p class="text-[#7E848C]">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium text-[#383838]"> How can I tell if my helmet is old and I need a new one?</div>
+                <div class="collapse-content">
+                    <p class="text-[#7E848C]">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium text-[#383838]">My bike has been in storage is it safe to ride?</div>
+                <div class="collapse-content">
+                    <p class="text-[#7E848C]">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium text-[#383838]">What rules should I follow when riding my bike?</div>
+                <div class="collapse-content">
+                    <p class="text-[#7E848C]">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                </div>
+            </div>
+    </div>
+
+  </section>
+
+  <!-- footer -->
+
+  <footer class="bg-[#0B0D17] text-white py-[64px] px-6 flex flex-col lg:flex-row items-center justify-between lg:px-[128px]">
+    <div class="footer-txt ">
+        <div class="first-part flex flex-row gap-x-[24px]">
+            <h2>Download Now</h2>
+            <h2>License</h2>
+        </div>
+        <div class="second-part flex flex-row gap-x-[24px] my-[12px]">
+            <h2>About</h2>
+            <h2>Features</h2>
+            <h2>Pricing</h2>
+        </div>
+        <div class="third-part flex flex-row gap-x-[48px]">
+            <h2>Help</h2>
+            <h2>Careers</h2>
+            <h2>Privacy Policy</h2>
+        </div>
+    </div>
+    <div class="mt-[64px] mt">
+        <h2 class="text-[20px] mb-4 font-semibold">Get the App</h2>
+        <img src="/image/Group.png" alt="" class="mb-4">
+        <img src="/image/Layer 2.png" alt="">
+    </div>
+</footer>
+</body>
+</html>
